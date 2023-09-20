@@ -69,7 +69,7 @@ resource "aws_ecs_service" "nginx" {
   desired_count   = 1
 
   network_configuration {
-    subnets = ["subnet-1ddbd557","subnet-f3e4a1dd","subnet-ac179592","subnet-ada4daca","subnet-9686fdca","subnet-dffacad0"] # Cambia esto con tus subredes
+    subnets = ["subnet-xxxxxxxxxx","subnet-xxxxxxx"] # Cambia esto con tus subredes
     assign_public_ip = true
     security_groups  = [aws_security_group.ecs_tasks.id]
   }
